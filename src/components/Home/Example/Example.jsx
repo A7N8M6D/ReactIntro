@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button/Button";
 import { ExampleContent } from "../../../data/Data";
-
+import "./Example.css"
 const Example = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
   let [content, setContent] = useState("Please Select a topic before to proceed");
@@ -28,16 +28,18 @@ const Example = () => {
     }
   }, [selectedTopic]);
   return (
-    <section className="">
+    <section className="row m-0 p-0 justify-content-center ">
+        <div className="col-8 col-12 p-0">
+
       <div className="row m-0 p-0">
         <div className="col-auto p-0">
           <h2>Examples</h2>
         </div>
       </div>
       <div className="row m-0 p-0 mt-3">
-        <div className="col-12 p-0">
+        <div className="col-12 ">
           {topics.map((topic) => (
-            <Button
+              <Button
               key={topic}
               name={topic}
               selectedTopic={selectedTopic}
@@ -51,6 +53,7 @@ const Example = () => {
           <p>{content}</p>
         </div>
       </div>
+              </div>
     </section>
   );
 };

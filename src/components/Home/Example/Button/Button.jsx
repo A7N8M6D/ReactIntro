@@ -12,7 +12,7 @@ const Button = ({ name, selectedTopic, handleSelect }) => {
   return (
     <button
       onClick={handleClick}
-      className={`${isSelected ? "active" : ""} p-3 Btn`}
+      className={`${isSelected ? "active" : ""} px-3 py-2 me-3 Btn`}
     >
       {name}
     </button>
