@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+  }
+  body{
+    background-color: #220640;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  h1,h2,h3,h4,h5{
+    padding: 0px;
+    margin: 0px;
+  }
+  p{
+    padding: 0px;
+    margin: 0px;
+  }
+  
